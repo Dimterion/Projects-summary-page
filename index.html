@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Projects summary</title>
+  </head>
+  <body>
+    <header>
+      <h1>Projects summary</h1>
+      <h2>
+        Here is a page that contains several small projects I worked on<br />(they
+        are related to the
+        <span><a href="https://scrimba.com/">Scrimba</a></span> and a bit of the
+        <span><a href="https://www.codecademy.com/">Codecademy</a></span>
+        courses)
+      </h2>
+      <p>
+        I've decided not to spread these projects into several repositories and
+        keep them under one.<br /><br />
+        There's also a very simple quote generator in the footer (no API). It
+        radomly generates a three-part message at the bottom of the page on its
+        loading.<br /><br />
+        Also, pages doesn't have "back/home" navigation on purpose. I needed
+        each of them to look like a standalone project.
+      </p>
+    </header>
+    <section>
+      <ul>
+        <li>
+          <a href="./projects/birthday-card/birthday-card.html"
+            ><img src="./images/birthday-page-img.PNG"
+          /></a>
+          <p class="link-name">Birthday card</p>
+        </li>
+        <li>
+          <a href="./projects/town-page/town-page.html"
+            ><img src="./images/town-page-img.PNG"
+          /></a>
+          <p class="link-name">City info page</p>
+        </li>
+        <li>
+          <a href="./projects/password-generator/password-generator.html"
+            ><img src="./images/password-generator-img.PNG"
+          /></a>
+          <p class="link-name">Password generator</p>
+        </li>
+        <li>
+          <a href="./projects/unit-converter/unit-converter.html"
+            ><img src="./images/unit-converter-img.PNG"
+          /></a>
+          <p class="link-name">Unit converter</p>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Some useful notes</h2>
+      <p>
+        These projects were a part of some of the HTML/CSS/JS courses I was
+        doing and, as it was a sort of a recap, I was taking notes of the most
+        useful information. They can be checked under this section.<br /><br />IMPORTANT:
+        these are only those notes that I found useful for myself while applying
+        all that to the techniques I learnt before. It's not a summary.
+      </p>
+      <div id="buttons-container">
+        <button id="htmlCssNotesBtn">HTML/CSS notes</button>
+        <button id="jsNotesBtn">JavaScript notes</button>
+      </div>
+      <div class="notes-container" id="notes-container-htmlCss">
+        <h3 id="htmlCssNotes">HTML/CSS notes</h3>
+        <div class="notes-content">
+          <ul class="notesUl">
+            <li>
+              <a
+                href="https://developer.mozilla.org/docs/Web/HTML/Element/input"
+                >Input field info</a
+              >
+            </li>
+            <li>
+              To center an element without flexbox: add width; add display:
+              block; add left and right margin - auto. Check "text-align" for
+              other elements.
+            </li>
+            <li>
+              CSS utility class - single purpose. Can be added with a space to
+              another class (e.g. color/underline for particular element).
+            </li>
+            <li>
+              Not all CSS properties are
+              <span
+                ><a
+                  href="https://developer.mozilla.org/docs/Web/CSS/inheritance"
+                  >inherited</a
+                ></span
+              >
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp"
+                >List of Web Safe Fonts</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/docs/Web/CSS/background-size"
+                >Check background-size</a
+              >
+            </li>
+            <li>Buttons don't inherit the font. Use font-family: inherit.</li>
+            <li>
+              <a href="https://developer.mozilla.org/docs/Web/CSS/text-shadow"
+                >Manipulate text-shadow</a
+              >
+            </li>
+            <li>
+              h1, h2, h3 {} to create CSS rules for a group of tags (any tags).
+            </li>
+            <li>align-items - could be a cause for items to stretch or not.</li>
+            <li>CSS specificity - e.g. IDs > class, etc.</li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/docs/Web/CSS/gradient/linear-gradient"
+                >linear-gradient</a
+              >
+            </li>
+            <li>
+              body { margin: 0 } to reset margin for everything at the
+              beginning.
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/docs/Web/CSS/list-style"
+                >list-style</a
+              >
+            </li>
+            <li>Target specific elements. E.g. li a {}</li>
+            <li>
+              Check where you need pixels or vh/vw (precision vs. adapting to
+              the screen size)
+            </li>
+            <li>
+              Add padding to the input field if you need to add gaps. Use width
+              + box-sizing: border-box to control its size.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="notes-container" id="notes-container-js">
+        <h3 id="jsNotes">JavaScript notes</h3>
+        <div class="notes-content">
+          <ul class="notesUl">
+            <li>
+              Strings have higher priority than numbers. E.g. string + number(s)
+              or number(s) + string always = string.
+            </li>
+            <li>
+              innerText shows only human-readable elements; textContent shows
+              all elements.
+            </li>
+            <li>
+              "What was declared in the loop stays in the loop scope only (e.g.
+              i)."<br />(c) Confucius
+            </li>
+            <li>
+              <span
+                ><a
+                  href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/random"
+                  >Math.random()</a
+                ></span
+              >
+              - range between 0 and 1 (1 not included).
+            </li>
+            <li>
+              <span
+                ><a
+                  href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/floor"
+                  >Math.floor()</a
+                ></span
+              >
+              - removes decimals.
+            </li>
+            <li>
+              Use return to get the value out of the function to use it further.
+            </li>
+            <li>Methods are functions that are attached to objects.</li>
+            <li>
+              unshift() adds items at the beginning of the array, shift()
+              removes item at the beginning of the array.
+            </li>
+            <li>To get all the values through a loop use += (not just =).</li>
+            <li>.innerHTML - to render HTML-elements.</li>
+            <li>Render the element once outside of the loop if possible.</li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/docs/Web/API/Window/localStorage"
+                >Local storage</a
+              >
+            </li>
+            <li>
+              JSON methods: parse / stringify - switching between strings and
+              arrays.
+            </li>
+            <li>typeof name - to check the type.</li>
+            <li>false, 0, "", null, undefined, NaN - are only falsy values.</li>
+            <li>
+              Parameters - when you define a function, arguments - when you call
+              a function.
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment"
+                >Destructuring assignment</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals"
+                >Object literals</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_syntax"
+                >Spread syntax (...)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/rest_parameters"
+                >Rest parameters</a
+              >
+            </li>
+            <li>
+              Set default parameters like: function name(param = default) {}.
+            </li>
+            <li>
+              includes() - checks if item is in the array (returns a boolean).
+            </li>
+            <li>
+              .padStart(desired-array-length, filler) - to fill array from
+              start; .padEnd(desired-array-length, filler) - to fill array from
+              end.
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Set"
+                >Sets</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+    <script src="index.js"></script>
+  </body>
+</html>

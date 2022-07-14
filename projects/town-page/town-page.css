@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Courgette", cursive;
+}
+
+header {
+  background-image: url(./images/versailles-main.jpg);
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 40vh;
+}
+
+h1,
+h2 {
+  border-radius: 5px;
+  padding: 2px 5px;
+  color: #dacbad;
+  text-shadow: 1px 1px 1px black;
+}
+
+h1 {
+  background-color: #989165;
+  margin: 2vh auto;
+}
+
+h2 {
+  background-color: #404c30;
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: #c4bf9e;
+}
+
+img {
+  width: 15vw;
+  height: 15vw;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+img:hover {
+  transition: 1s;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 5px;
+}
+
+.info-container {
+  margin: 10vh auto;
+  color: #293717;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #6eb1e3;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  color: #dacbad;
+  text-shadow: 1px 1px black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #293717;
+  font-size: 1.5rem;
+  height: 15vh;
+  border-bottom: 5px solid #e1d8c8;
+}

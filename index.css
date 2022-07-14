@@ -1,0 +1,137 @@
+:root {
+  --primaryBackground: #212529;
+  --secondaryBackground: #495057;
+  --textColor: #ced4da;
+  --linksColor: #f72585;
+}
+
+body {
+  margin: 0;
+  background-color: var(--primaryBackground);
+  color: var(--textColor);
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: var(--secondaryBackground);
+  margin: 1vh 2vh 5vh;
+  padding: 1vh;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+section {
+  background-color: var(--secondaryBackground);
+  margin: 5vh 2vh;
+  padding: 1vh;
+  border-radius: 5px;
+}
+
+ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  list-style: none;
+}
+
+.notesUl {
+  flex-flow: column nowrap;
+  text-align: left;
+  list-style: square;
+  margin-left: 15px;
+}
+
+.notes-content {
+  margin-top: 20px;
+  background-color: var(--primaryBackground);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+li {
+  margin-bottom: 2vh;
+}
+
+.link-name {
+  border-bottom: 2px solid var(--textColor);
+  line-height: 4vh;
+}
+
+img {
+  width: 440px;
+  height: 265px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+img:hover {
+  opacity: 0.5;
+  transition: 0.5s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: var(--linksColor);
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+p {
+  text-align: center;
+  font-style: italic;
+}
+
+#buttons-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+button {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--textColor);
+  border: 2px solid var(--textColor);
+  cursor: pointer;
+  transition: 0.5s;
+  margin: auto;
+  display: block;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--primaryBackground);
+  color: var(--textColor);
+  transition: 0.5s;
+}
+
+.notes-container {
+  margin: 2vh 0;
+  text-align: center;
+}
+
+h3 {
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--secondaryBackground);
+  margin: 5vh 2vh 1vh;
+  padding: 2vh;
+  border-radius: 5px;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 480px) {
+  img {
+    width: 83vw;
+  }
+}
