@@ -82,5 +82,3 @@ jsNotesBtn.addEventListener("click", () => {
     htmlCssNotesBtn.textContent = "HTML/CSS notes";
   }
 });
-
-// pushing the content into the appropriate notes section
