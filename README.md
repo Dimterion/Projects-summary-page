@@ -1,10 +1,10 @@
-# Projects summary page
+# Projects Summary Page
 
-A group of projects completed for various courses
+A group of projects completed for various courses and gathered under one app
 
 ## Link to the page
 
-[Projects summary page](https://dimterion.github.io/Projects-summary-page/)
+[Projects Summary Page](https://dimterion.github.io/Projects-summary-page/)
 
 ## Built with
 
